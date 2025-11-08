@@ -104,13 +104,18 @@ h1, h3, h4, h5, p, li, a{
         transform: translateY(-2000px);
     }
 }
+
+.divider{
+    height: 2px;
+    background: linear-gradient(to right, transparent, orange, transparent);
+    margin: 20px 0;
+    margin-bottom: 30px;
+}
+
 /*Navbar*/
 
 
 #header {
-    top: 0;
-    right: 0;
-    width: 45%;
     border-radius: 25px;
     padding: 18px 0 0 0;
     margin-bottom: 32px;
@@ -131,6 +136,7 @@ h1, h3, h4, h5, p, li, a{
     justify-content: center;
     background: transparent;
     padding: 0;
+    gap: 25px;
 }
 
 #header ul li {
@@ -158,12 +164,8 @@ h1, h3, h4, h5, p, li, a{
     transform: translateY(-2px) scale(1.05);
     text-shadow: 0 1px 4px rgba(255,140,0,0.18);
 }
-
 #header{
-    top: 0;
-    right: 0;
     overflow: hidden;
-    width: 45%;
 }
 /*About Me section*/
 #aboutMe{
@@ -255,12 +257,7 @@ h1, h3, h4, h5, p, li, a{
     justify-content: center;
     align-items: stretch;
     border-radius: 25px;
-    box-shadow: 0 8px 32px 0 rgba(255,140,0,0.15), inset 0 0 10px silver;
-    padding: 40px 25px;
-    margin-bottom: 40px;
-    transition: box-shadow 0.3s, background 0.3s;
 }
-
 
 #pFlex .project-card {
     background: rgba(0,0,0,0.7);
@@ -333,7 +330,11 @@ h1, h3, h4, h5, p, li, a{
     padding: 25px;
     text-align:center;
 }
-
+#pFlex:hover{
+    border: 2px solid black;
+    box-shadow: inset 0 0 10px silver;
+    border-radius: 25px;
+}
 #projects{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
   transition: 0.3s;
@@ -477,6 +478,43 @@ h1, h3, h4, h5, p, li, a{
     background-color: whitesmoke;
     color: black;
 }
+.light-mode #Home h1{
+    color: skyblue;
+    text-shadow: 0 1px 4px rgba(0,123,255,0.18);
+}
+.light-mode #aboutMe{
+    background: linear-gradient(45deg, #ff6b6b, skyblue, #6c5ce7);
+    color: black;
+}
+.light-mode #aboutMe::after, .light-mode #aboutMe::before {
+    background-image: conic-gradient(from var(--angle), transparent 90%, skyblue);
+}
+
+.light-mode #experience p {
+    border-left: 2px solid skyblue;
+}
+.light-mode #experience ::before{
+    background: skyblue;
+}
+.light-mode #backToTop {
+    color : black;
+}
+.light-mode .divider{
+    background: linear-gradient(to right, transparent, skyblue, transparent);
+}
+.light-mode #header ul li a {
+    color: skyblue;
+    background: rgba(0, 123, 255, 0.1);
+}
+.light-mode #header ul li a:hover {
+    color: whitesmoke;
+    background: skyblue;
+}
+.light-mode #experience p:hover {
+    border-left: 2px solid black;
+    background: rgba(0, 0, 0, 0.1);
+}
+
 .light-mode .star {
     background-color: #0066cc; /* Blue stars for light mode */
 }
@@ -497,7 +535,6 @@ h1, h3, h4, h5, p, li, a{
     animation-duration: 1.3s; 
     background-color: #003366; 
 }
-
 /*media queries*/
 @media (max-width: 600px){
     #aboutMe{
