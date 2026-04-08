@@ -4,7 +4,7 @@ body{
     color: whitesmoke;
 }
 h1, h3, h4, h5, p, li, a{
-    font-family: consolas;
+    font-family: 'Poppins', 'Inter', sans-serif;
 }
 @keyframes gradientText {
     0% { background-position: 0% 50%; }
