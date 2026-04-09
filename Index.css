@@ -4,7 +4,7 @@ body{
     color: whitesmoke;
 }
 h1, h3, h4, h5, p, li, a{
-    font-family: 'Poppins', 'Inter', sans-serif;
+    font-family: consolas;
 }
 @keyframes gradientText {
     0% { background-position: 0% 50%; }
@@ -46,6 +46,14 @@ h1, h3, h4, h5, p, li, a{
     text-shadow: 0 1px 2px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
     animation: gradientShift 3s ease infinite;
+    text-align: center;
+}
+#gitHub{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 #lightBtn:hover {
@@ -245,48 +253,82 @@ h1, h3, h4, h5, p, li, a{
     border-radius: 25px;
 }
 /*Projects section*/
-#project1{
-    text-align: center;
-    margin-bottom: 40px;
-    border: 2px solid orange;
-    border-radius: 50px;
-    display: inline-block;
-    padding: 20px;
-    box-shadow:#6c5ce7 0px 0px 15px;
+/* Projects Section */
+#projects {
+  text-align: center;
+  margin: 50px 20px;
 }
-#projectDesc{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 18px;
-    background-color:beige;
-    color: black;
-    box-shadow: inset 0 0 10px silver;
-    padding:10px; 
-    padding-bottom: 20px;
-    
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
-#project2{
-    text-align: center;
-    margin-bottom: 40px;
-    border: 2px solid orange;
-    border-radius: 50px;
-    display: inline-block;
-    padding: 20px;
-    box-shadow: inset 0 0 10px silver;
-    padding: 10px;
-    padding-bottom:20px;
+
+/* Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
-#project2Desc{
-    border: 2ox solid bisque;
-    border-radius: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 18px;
-    background-color:beige;
-    color: black;
-    box-shadow: inset 0 0 10px silver;
-    padding:10px;
-    padding-bottom: 20px;
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
+}
+
+/* Image */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Title */
+.project-card h2 {
+  margin: 15px 0 10px;
+}
+
+/* Description */
+.project-card p {
+  font-size: 14px;
+}
+
+/* Tech stack */
+.project-card .tech {
+  margin-top: 10px;
+  color: #ffb347;
+  font-size: 13px;
+}
+
+/* Buttons */
+.project-buttons {
+  margin-top: 15px;
+}
+
+.project-buttons button {
+  margin: 5px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff8c00, #ffcc70);
+  color: black;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.project-buttons button:hover {
+  transform: scale(1.05);
 }
 /* ensure the #Home h1 sizing stays intact */
 #Home h1{
