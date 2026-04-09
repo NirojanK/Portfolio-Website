@@ -60,8 +60,32 @@ h1, h3, h4, h5, p, li, a{
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+.tech-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 18px;
+}
+.planet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff, orange, pink );
+  display: inline-block;
+  animation: spin 2.5s linear infinite, glow 1.5s ease-in-out infinite alternate;
+}
 
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
 
+@keyframes glow {
+  from { filter: drop-shadow(0 0 2px orange); }
+  to   { filter: drop-shadow(0 0 8px orange); }
+}
 
 
 
@@ -224,7 +248,7 @@ h1, h3, h4, h5, p, li, a{
 /*Tech Stack section*/
 #techStack{
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     padding: 25px;
     margin-bottom: 40px;
 }
@@ -246,6 +270,11 @@ h1, h3, h4, h5, p, li, a{
 #techStack ul li img:hover{
     transform: scale(1.2);
     transition: transform 0.3s;
+}
+#techStack p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
 }
 #techStack:hover{
     border: 2px solid black;
