@@ -10,13 +10,22 @@
 <body>
 <!--Top section-->
 <div id = "Home">
-
     <div id = "aboutMe">
     <img src = "Capture1.jpg" alt = "Niro"  height = "150px" width="150px"></img>
     <p>Hi, I’m Niro — a Software Developer with 2 years of IT experience at Tata Consultancy Services.
     I specialize in building clean, responsive, and user-focused web applications. I enjoy solving complex problems and turning ideas into real-world solutions.
     Outside of tech, I focus on fitness and personal growth, which helps me bring discipline, consistency, and a strong mindset to my work.
     </p>
+    </div>
+    <br>
+    <a href = "https://github.com/NirojanK"><img src = "github.png" style="background-color: aliceblue; height: 50px; width: 50px; margin-right : 10px;"></a>
+    <a href= mailTo:nirokal92@gmail.com> <img src = "gmail.png" style = " height: 50px; width: 50px; margin-right: 10px;"></a>
+    <a href = "https://www.linkedin.com/in/niro-kalaimannan-041469157/" > <img src = "linkedin.png" style = " height: 50px; width: 50px;"></a>
+    <br>
+    <div id = "header">
+    <ul>
+    <li><a href = "#projects">Projects</a></li>
+    </ul>
     </div>
     <div id = "techStack">
     <ul>
@@ -31,47 +40,65 @@
 </div>
      <div id = "ldBtns">
         <button id = "lightBtn" onclick="lightMode()">Toggle Light Mode</button>
-    </div>
+     </div>
+     <br>
+     
     <div id ="sContainer">
     </div>
-   
 </div>
 
+
 <div class = "divider">
-</div>
-<!--Navbar-->
-<div id = "header">
-    <ul>
-        <li> <a href ="#Home">Home</a></li>
-        <li><a href = "#project1">Projects</a></li>
-        <li><a href = "#experience">Experience</a></li>
-        <li><a href = "#footer">Contact</a></li>
-    </ul>
 </div>
 <div class = "divider">
 </div>
 <!--Projects-->
+<!-- Projects Section -->
+<div id="projects">
+  <h1>Projects</h1>
+  <p>Here are some of my recent projects:</p>
 
-<div id = "project1">
-    <h1>Speed Typing Test:</h1>
-    <ul> <p> <img src = "WPM.PNG" style = "height: 300px; width: 500px"></p></ul>
-    <div id ="projectDesc">
-    <p>A web application that tests your typing speed and accuracy!</p>
-    <p>Tech Stack: HTML, CSS, and JavaScript</p>
-    <a href = "https://nirokalaimannan.github.io/Speed-Typing-Test/"> <button>View Project</button> </a>
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="WPM.PNG" alt="Typing Test">
+
+      <h2>Speed Typing Test</h2>
+      <p>A web app that tests typing speed and accuracy.</p>
+
+      <p class="tech">HTML • CSS • JavaScript</p>
+
+      <div class="project-buttons">
+        <a href="https://nirokalaimannan.github.io/Speed-Typing-Test/" target="_blank">
+          <button>Live Demo</button>
+        </a>
+        <a href="https://github.com/NirojanK/Speed-Typing-Test" target="_blank">
+          <button>GitHub</button>
+        </a>
+      </div>
     </div>
-</div>
-<br>
-<div class = "divider">
-</div>
-<div id="project2">
-    <h1> Planet Creation App </h1>
-    <ul> <p> <img src = "planets.PNG" style = "height: 300px; width: 500px"></p></ul>
-    <div id ="project2Desc">
-    <p>A web application that allows users to create and customize their own planets!</p>
-    <p>Tech Stack: HTML, CSS, and JavaScript</p>
-    <a href = "https://octopus-app-k9sgs.ondigitalocean.app/"> <button>View Project</button> </a> 
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="planets.PNG" alt="Planet App">
+
+      <h2>Planet Creation App</h2>
+      <p>Create and customize your own planets with interactive UI.</p>
+
+      <p class="tech">HTML • CSS • JavaScript</p>
+
+      <div class="project-buttons">
+        <a href="https://octopus-app-k9sgs.ondigitalocean.app/" target="_blank">
+          <button>Live Demo</button>
+        </a>
+        <a href="#" target="_blank">
+          <button>GitHub</button>
+        </a>
+      </div>
     </div>
+
+  </div>
 </div>
 <div class = "divider">
 </div>
@@ -79,9 +106,19 @@
 <div id = "experience">
     <h1>Experience:</h1>
     <br>
-    <ul> <p><img src = "work.png" style = "height: 20px" style = "width : 20px"> Worked at TCS as a consultant for two years, while with them I worked at CIBC and SunLife Financial.</p></ul>
-    <ul><p><img src = "work.png" style = "height: 20px" style = "width : 20px"> Have over 5 years of experience working at Bulk barn and Home Depot as a store associate. </p></ul>
-    <ul><p><img src = "work.png" style = "height: 20px" style = "width: 20px"> Personal trainer at GoodLife for 2 years, this was the opposite of programming because I was always moving around seeking clients.</p></ul>
+    <ul> <p><img src = "work.png" style = "height: 20px" style = "width : 20px"> Software Consultant – Tata Consultancy Services <br>
+
+    • Provided IT support and troubleshooting for enterprise clients (CIBC, SunLife)
+    • Resolved technical issues and improved system reliability
+    • Collaborated with teams to ensure smooth application performance</p></ul>
+    <ul><p><img src = "work.png" style = "height: 20px" style = "width : 20px"> Retail Associate – Home Depot / Bulk Barn <br>
+
+    • Delivered customer support in fast-paced environments
+    • Developed strong communication and problem-solving skills </p></ul>
+    <ul><p><img src = "work.png" style = "height: 20px" style = "width: 20px"> Personal Trainer – GoodLife <br>
+
+    • Built client relationships and customized fitness plans
+    • Strengthened discipline, communication, and consistency</p></ul>
 </div>
 <!--Back to top button-->
 <div id = "backToTop">
@@ -91,9 +128,8 @@
 <!--Footer-->
 <div id = "footer">
     <div id = "iconsB">
-        <a href = "https://github.com/NirojanK"><img src = "github.png" style="background-color: aliceblue;"></a>
-        <a href= mailTo:nirokal92@gmail.com> <img src = "gmail.png"></a>
-        <a href = "https://www.linkedin.com/in/niro-kalaimannan-041469157/"> <img src = "linkedin.png"></a>
+        
+        
     </div>
     <p>© 2025 Nirojan Kalaimannan. All rights reserved.</p>
 </div>
