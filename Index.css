@@ -610,3 +610,96 @@ h1, h3, h4, h5, p, li, a{
         margin: 0 auto;
     }
 }
+/* =========================
+   MOBILE FIX – REAL FIX
+========================= */
+@media (max-width: 600px) {
+    /* 🔥 CRITICAL FIX */
+  #Home {
+    height: auto;         /* remove viewport lock */
+    min-height: 100vh;    /* keeps full screen feel */
+    padding-bottom: 40px; /* spacing before next section */
+  }
+
+  /* 🔥 ENSURE NORMAL FLOW */
+  #projects {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* 🔥 FIX TECH ICON OVERFLOW (MAIN ISSUE) */
+  #techStack ul {
+    flex-wrap: wrap;              /* allows wrapping */
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  #techStack ul li {
+    flex: 0 0 auto;
+  }
+
+  #techStack ul li img {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* 🔥 FORCE SECTION SEPARATION */
+  #techStack {
+    margin-bottom: 40px;
+    overflow: hidden;             /* prevents spillover */
+  }
+
+  /* 🔥 FIX TEXT LINE */
+  .tech-text {
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  /* 🔥 FIX PROJECT SECTION */
+  #projects {
+    margin-top: 30px;
+  }
+
+  /* 🔥 FIX CARD */
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card img {
+    max-height: 140px;
+    object-fit: contain;
+  }
+
+  /* 🔥 BUTTON LAYOUT */
+  .project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* 🔥 ABOUT ME STACK */
+  #aboutMe {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #aboutMe img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  #aboutMe p {
+    font-size: 15px;
+  }
+
+  /* 🔥 HEADER STACK */
+  #header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
