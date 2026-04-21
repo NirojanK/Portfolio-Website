@@ -1,189 +1,173 @@
-<!Doctype HTML>
-<Head>
-<!--Title and link references-->
-<Html lang="en">
-    <meta charSet="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Index.css" />
-    <title>Portfolio Website</title>
-</Head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workout App</title>
+    <link rel="stylesheet" href="Index.css">
+</head>
+
 <body>
-<!--Top section-->
-<div id = "Home">
-    <div id = "aboutMe">
-    <img src = "Capture1.jpg" alt = "Niro"  height = "150px" width="150px"></img>
-    <p>Hi, I’m <b>Niro</b> — a Software Developer with 2 years of IT experience at Tata Consultancy Services.
-    I specialize in building clean, responsive, and user-focused web applications. I enjoy solving complex problems and turning ideas into real-world solutions.
-    Outside of tech, I focus on fitness and personal growth, which helps me bring discipline, consistency, and a strong mindset to my work.
-    </p>
+
+<!-- Navbar -->
+<nav>
+    <a href= "#reviews">Reviews</a>
+    <a href="#contact" >Contact</a>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Consistency and then discipline</h1>
+        <p>
+            If you just go to the gym you'll get the summon the strength you need!
+            Do that over and over again and in time you'll be a completely different person.
+        </p>
+
+        <a href="#workouts" class="cta-btn">Start Workout</a>
+
+        <!-- Social Icons -->
+        <div class="hero-links">
+            <a href="#">
+                <img src="youtube-icon.PNG" alt="YouTube">
+            </a>
+            <a href="#">
+                <img src="instagram-icon.PNG" alt="Instagram">
+            </a>
+        </div>
     </div>
-    <br>
-    <div class = "tech-text">
-        <span><a href = "https://github.com/NirojanK"><img src = "github.png" style="background-color: aliceblue; height: 50px; width: 50px; margin-right : 10px;"></a></span>
-        <span class="planet"></span>
-        <span><a href= mailTo:nirokal92@gmail.com> <img src = "gmail.png" style = " height: 50px; width: 50px; margin-right: 10px;"></a></span>
-        <span class="planet"></span>
-    <a href = "https://www.linkedin.com/in/niro-kalaimannan-041469157/" > <img src = "linkedin.png" style = " height: 50px; width: 50px;"></a>
+
+    <div class="hero-image">
+        <img src="hero-img.JPG" alt="Workout Image">
     </div>
-    <br>
-    <div id = "header">
-    <ul>
-    <li>
-        <p>Explore my work</p>
-        <a href = "#projects">Projects</a></li>
-    </ul>
+</section>
+
+<!-- Workout Sections -->
+<div class="container" id = "workouts">
+
+    <div class="box">
+        <h3>Back Day</h3>
+        <div class="img-row">
+            <img src="back-img.JPG">
+            <img src="back-img2.JPG">
+            <img src="back-img3.JPG">
+            <img src="back-img4.JPG">
+            <img src="back-img5.JPG">
+        </div>
+        <ul>
+            <li>Deadlifts</li>
+            <li>Pullups</li>
+            <li>Seated Cable Rows</li>
+            <li>Barbell Rows</li>
+            <li>Lat Pulldowns</li>
+            <li>Reverse cable flys</li>
+        </ul>
     </div>
-    <div id = "techStack">
-    <ul>
-        <li> <img src="react.png"></li>
-        <li> <img src = "javascript.png"></li>
-        <li> <img src = "html.png"></li>
-        <li> <img src = "css.png"></li>
-        <li> <img src = "python.png"></li>
-        <li> <img src = "csharp.png"></li>
-        <li> <img src = "java.png"></li>
-    </ul>
-    <br>
-    <div class="tech-text">
-        <span>React</span>
-        <span class="planet"></span>
-        <span>JavaScript</span>
-        <span class="planet"></span>
-        <span>HTML</span>
-        <span class="planet"></span>
-        <span>CSS</span>
-        <span class="planet"></span>
-        <span>Python</span>
-        <span class ="planet"></span>
-        <span>C#</span>
-        <span class="planet"></span>
-        <span>Java</span>
-</div>
-</div>
-     <div id = "ldBtns">
-        <button id = "lightBtn" onclick="lightMode()">Toggle Light Mode</button>
-     </div>
-     <br>
-     
-    <div id ="sContainer">
+
+    <div class="box">
+        <h3>Chest Day</h3>
+        <div class="img-row">
+            <img src="chest-img.JPG">
+            <img src="chest-img2.JPG">
+            <img src="chest-img3.JPG">
+            <img src="chest-img4.JPG">
+            <img src="chest-img5.JPG">
+        </div>
+        <ul>
+            <li>Bench Press</li>
+            <li>Push-ups</li>
+            <li>Incline Dumbbell Press</li>
+            <li>Chest Flys</li>
+            <li>Dips</li>
+        </ul>
     </div>
-</div>
 
-</div>
-<div class = "divider">
-</div>
-<!--Projects-->
-<!-- Projects Section -->
-<div id="projects">
-  <h1>Projects</h1>
-  <p>Here are some of my recent projects:</p>
+    <div class="box">
+        <h3>Leg Day</h3>
+        <div class="img-row">
+            <img src="leg-img.JPG">
+            <img src="leg-img2.JPG">
+            <img src="leg-img3.JPG">
+            <img src="leg-img4.JPG">
+            <img src="leg-img5.JPG">
+        </div>
+        <ul>
+            <li>Squats</li>
+            <li>Lunges</li>
+            <li>Leg Press</li>
+            <li>Hamstring Curls</li>
+            <li>Hip Thrusts</li>
+        </ul>
+    </div>
 
-  <div class="projects-container">
+    <div class="box">
+        <h3>Arm Exercises</h3>
+        <p>Mix these into your chest or back workouts at the end.</p>
 
-    <!-- Project 1 -->
-    <div class="project-card">
-      <img src="WPM.PNG" alt="Typing Test">
+        <div class="img-row">
+            <img src="arm-img.JPG">
+            <img src="arm-img2.JPG">
+            <img src="arm-img3.JPG">
+            <img src="arm-img4.JPG">
+            <img src="arm-img5.JPG">
+            <img src="arm-img6.JPG">
+            <img src="arm-img7.JPG">
+        </div>
 
-      <h2>Speed Typing Test</h2>
-      <p>A web app that tests typing speed and accuracy.</p>
+        <ul>
+            <li>EZ-Bar Bicep Curls</li>
+            <li>Chin Ups</li>
+            <li>Machine Curls</li>
+            <li>Tricep Extensions</li>
+            <li>Close-Grip Curls</li>
+            <li>Tricep Dips</li>
+            <li>Tricep Pulldowns</li>
+        </ul>
+    </div>
 
-      <p class="tech">HTML • CSS • JavaScript</p>
-
-      <div class="project-buttons">
-        <a href="https://nirojank.github.io/Speed-Typing-Test/index.html" target="_blank">
-          <button>Live Demo</button>
+    <div class="box">
+        <h3>Motivation</h3>
+        <p>Watch my journey and what kept me consistent:</p>
+        <img src="motivation-img.JPG" class="large-img">
+        <br>
+        <a href="https://www.youtube.com/watch?v=4V-63E01yeo" target="_blank">
+            Watch Video
         </a>
-        <a href="https://github.com/NirojanK/Speed-Typing-Test/tree/main/Speed%20Typing%20App" target="_blank">
-          <button>GitHub</button>
-        </a>
-      </div>
     </div>
 
-    <!-- Project 2 -->
-    <div class="project-card">
-      <img src="planets.PNG" alt="Planet App">
+</div>
 
-      <h2>Planet Creation App</h2>
-      <p>Create and customize your own planets with interactive UI.</p>
-
-      <p class="tech">HTML • CSS • JavaScript</p>
-
-      <div class="project-buttons">
-        <a href="https://octopus-app-k9sgs.ondigitalocean.app/" target="_blank">
-          <button>Live Demo</button>
-        </a>
-        <a href="https://github.com/NirojanK/PlanetApp" target="_blank">
-          <button>GitHub</button>
-        </a>
-      </div>
+<!-- Reviews -->
+<div class="reviews-section" id="reviews">
+<h2 class="reviews-title">Reviews by clients</h2>
+<div class="reviews">
+    <div class="review-card">
+        <img src="review-img.JPG">
     </div>
-    <!--Project 3-->
-    <div class = "project-card">
-      <img src = "firstGame.PNG" alt = "My First Game"></a>
 
-      <h2>My First Game</h2>
-      <p>A 3d game I made in unity as a learning project.</p>
-
-      <p class = "tech">Unity • C#</p>
-      <div class = "project-buttons">
-      <a href ="https://play.unity.com/en/games/20829e0b-672e-436a-a91c-4edd14deb7e1/my-first-game" target="_blank">
-        <button> Live Demo</button>
-      </a>
+    <div class="review-card">
+        <img src="review-img2.JPG">
     </div>
+
+    <div class="review-card">
+        <img src="review-img3.JPG">
     </div>
-    <!--Project 4-->
-    <div class = "project-card">
-      <img src = "workout-img.JPG" alt = "Fitness App"></a>
-
-      <h2>Fitness App</h2>
-      <p>A fitness app that's a guide for people looking to get into fitness.</p>
-      
-      <p class = "tech">HTML • CSS</p>
-      <div class = "project-buttons">
-        <a href = "https://nirojank.github.io/Workout-App/Index.html" target="_blank">
-          <button>Live Demo</button>
-        </a>
-        <a href ="https://github.com/NirojanK/Workout-App" target="_blank">
-          <button>GitHub</button>
-        </a>
-      </div>
-
-  </div>
 </div>
-<br>
-<div class = "divider">
 </div>
-<!--Experience-->
-<div id = "experience">
-    <h1>Experience:</h1>
-    <br>
-    <ul> <p><img src = "work.png" style = "height: 20px" style = "width : 20px"> Software Consultant – Tata Consultancy Services <br>
+<!-- Contact -->
+<div class="contact-section" id="contact">
+    <div class="contact-card">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out if you have questions or want to start your fitness journey.</p>
 
-    • Provided IT support and troubleshooting for enterprise clients (CIBC, SunLife)
-    • Resolved technical issues and improved system reliability
-    • Collaborated with teams to ensure smooth application performance</p></ul>
-    <ul><p><img src = "work.png" style = "height: 20px" style = "width : 20px"> Retail Associate – Home Depot / Bulk Barn <br>
-
-    • Delivered customer support in fast-paced environments
-    • Developed strong communication and problem-solving skills </p></ul>
-    <ul><p><img src = "work.png" style = "height: 20px" style = "width: 20px"> Personal Trainer – GoodLife <br>
-
-    • Built client relationships and customized fitness plans
-    • Strengthened discipline, communication, and consistency</p></ul>
-</div>
-<!--Back to top button-->
-<div id = "backToTop">
-    <a href = "#Home"> <img src = "backtotop.png" style = "height: 50px" style = "width: 50px" style = "opacity: 0.5"></a>
-    <p>Click the rocket to go back to the top</p>
-</div>
-<!--Footer-->
-<div id = "footer">
-    <div id = "iconsB">
-        
-        
+        <div class="contact-info">
+            <span>📧</span>
+            <a href="mailto:nirokal92@gmail.com">nirokal92@gmail.com</a>
+        </div>
     </div>
-    <p>© 2025 Nirojan Kalaimannan. All rights reserved.</p>
 </div>
-<script src="Index.js"></script>
+<!-- Footer -->
+ <div class="footer">
+    <p>&copy; 2026 Niro Kalaimannan. All rights reserved.</p>
+</div>
 </body>
-</Html>
+</html>
